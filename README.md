@@ -9,7 +9,7 @@
 
 ## Install
 
--   Run `cd` to the newly created `/laravel-stisla` directory
+-   Run `cd` to the newly created `/spk_naive-bayes` directory
 -   Run `composer install` command
 -   Run `npm install` command
 -   Run `npm run dev` command
