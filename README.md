@@ -9,9 +9,14 @@
 
 ## Install
 
-composer install
-
-php artisan migrate:fresh --seed
+-   Run `cd` to the newly created `/laravel-stisla` directory
+-   Run `composer install` command
+-   Run `npm install` command
+-   Run `npm run dev` command
+-   Run `cp .env.example .env` command
+-   Run `php artisan key:generate` command
+-   Run `php artisan serve` command
+-   Run `php artisan migrate:fresh --seed` command
 
 ============================================
 usernam = admin
