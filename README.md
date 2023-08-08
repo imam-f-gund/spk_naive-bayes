@@ -9,7 +9,7 @@
 
 ## Install
 
--   Run `clone` to `https://github.com/imam-f-gund/spk_naive-bayes.git` directory
+-   Run `git clone` to `https://github.com/imam-f-gund/spk_naive-bayes.git` command
 -   Run `cd` to the newly created `/spk_naive-bayes` directory
 -   Run `composer install` command
 -   Run `npm install` command
