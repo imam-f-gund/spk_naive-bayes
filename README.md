@@ -16,8 +16,8 @@
 -   Run `npm run dev` command
 -   Run `cp .env.example .env` command
 -   Run `php artisan key:generate` command
--   Run `php artisan serve` command
 -   Run `php artisan migrate:fresh --seed` command
+-   Run `php artisan serve` command
 
 ============================================
 usernam = admin
