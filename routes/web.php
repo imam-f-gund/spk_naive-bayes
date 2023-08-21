@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Pages\AnalisaController;
 use App\Http\Controllers\Pages\KriteriaController;
+use App\Http\Controllers\Pages\PerformanceController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -38,3 +39,6 @@ Route::get('kriteria', [KriteriaController::class, 'index'])->name('kriteria');
 Route::get('analisa', [AnalisaController::class, 'index'])->name('analisa');
 Route::post('analisa', [AnalisaController::class, 'prediction'])->name('analisa.prediction');
 Route::get('analisa/export', [AnalisaController::class, 'export'])->name('analisa.export');
+
+
+Route::get('performance', [PerformanceController::class, 'index'])->name('performance');
