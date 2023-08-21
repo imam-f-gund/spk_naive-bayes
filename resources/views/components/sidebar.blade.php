@@ -17,7 +17,7 @@
             </li>
             <li class="nav-item dropdown {{ $type_menu === 'performance' ? 'active' : '' }}">
                 <a href="{{ url('performance?data_training=60') }}"><i
-                        class="fas fa-sitemap"></i><span>Performance</span></a>
+                        class="fas fa-chart-bar"></i><span>Performance</span></a>
             </li>
             <li class="nav-item dropdown {{ $type_menu === 'analisa' ? 'active' : '' }}">
                 <a href="{{ url('analisa') }}"><i class="fas fa-project-diagram"></i><span>Analisa</span></a>

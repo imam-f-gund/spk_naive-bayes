@@ -9,11 +9,11 @@
 @section('main')<div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>performance</h1>
+                <h1>Performance</h1>
             </div>
 
             <div class="section-body">
-                <h2 class="section-title">Data performance</h2>
+                <h2 class="section-title">Data Performance</h2>
 
 
                 <div class="row">
@@ -39,7 +39,7 @@
                                                     <option value="70">70%</option>
                                                     <option value="80">80%</option>
                                                     <option value="90">90%</option>
-                                                
+
                                                 </select>
                                             </div>
                                         </div>
@@ -47,7 +47,7 @@
                                             <button type="submit" class="btn btn-primary float-right">Persentase</button>
                                         </div>
                                     </form>
-                            
+
                                     {{-- <button type="button" class="btn btn-primary float-right" id="modal-performance">
                                         Tambah performance
                                     </button> --}}
@@ -55,7 +55,9 @@
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <div class="text-center"><tr>Data Training {{$persentase}}% </tr></div>
+                                    <div class="text-center">
+                                        <tr>Data Training {{ $persentase }}% </tr>
+                                    </div>
                                     <table class="table">
                                         <h5>DATA TRAINING</h5>
                                         <thead class="text-center">
@@ -80,7 +82,7 @@
                                                     <td>{{ $data['butir'] }}</td>
                                                     <td>{{ $data['hama'] }}</td>
                                                     <td>{{ $data['mutu'] }}</td>
-                                                
+
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -122,7 +124,7 @@
                                                     <td>{{ $item['fakta'] }}</td>
                                                     <td>{{ $item['result'] }}</td>
                                                     <td>{{ $item['prediksi'] }}</td>
-                                                
+
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -139,10 +141,10 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                                <tr>
-                                                    <td class="text-center">{{round($akurasi, 2) }}%</td>
-                                                </tr>
-                                            
+                                            <tr>
+                                                <td class="text-center">{{ round($akurasi, 2) }}%</td>
+                                            </tr>
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -152,7 +154,7 @@
         </section>
 
         {{-- form modal performance --}}
-{{-- 
+        {{--
         <form class="modal-part" id="modal-performance-part" action="{{ url('performance') }}" method="POST">
             @csrf
             <div class="form-group">
