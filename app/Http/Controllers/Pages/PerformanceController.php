@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Kriteria;
 use App\Service\NaiveBayes;
 use Illuminate\Http\Request;
-use RealRashid\SweetAlert\Facades\Alert;
 
 class PerformanceController extends Controller
 {
@@ -18,12 +17,12 @@ class PerformanceController extends Controller
     public function index(Request $request)
     {
 
-        if ($request->data_training > Kriteria::count()) {
+        // if($request->data_training>$total = Kriteria::count()){
 
-            Alert::error('Info', 'Inputan melebihi data training');
-            return redirect()->route('performance');
+        //     Alert::error('Info', 'Inputan melebihi data training');
+        //     return back();
 
-        }
+        // }
 
         $naiv = new NaiveBayes;
 
@@ -34,27 +33,27 @@ class PerformanceController extends Controller
         $fn = [];
 
         // // if(){
-        //     $persentase = 100;
-        //     if(!empty($request->data_training)){
-        //         $persentase = $request->data_training;
-        //     }
+        $persentase = 100;
+        if (!empty($request->data_training)) {
+            $persentase = $request->data_training;
+        }
 
-        //     $total_data =Kriteria::count()/100*$persentase;
-        //     $data_training = Kriteria::limit((int) $total_data)->get();
+        $total_data = Kriteria::count() / 100 * $persentase;
+        $data_training = Kriteria::limit((int) $total_data)->get();
 
-        //     $total = Kriteria::count();
-        //     $sisa_data = $total-(int) $total_data;
-        //     $data_testing = Kriteria::limit($sisa_data)->get();
-        //     $testing = $sisa_data;
-        // // }
-        $persentase = $request->data_training;
-
-        $data_training = Kriteria::limit($request->data_training)->get();
-        $data_tes = Kriteria::limit(30)->get();
-        $total_data = Kriteria::count() + count($data_tes);
-        $sisa_data = $total_data - $request->data_training;
+        $total = Kriteria::count();
+        $sisa_data = $total - (int) $total_data;
         $data_testing = Kriteria::limit($sisa_data)->get();
         $testing = $sisa_data;
+        // // }
+        // $persentase = $request->data_training;
+
+        // $data_training = Kriteria::limit($request->data_training)->get();
+        // $data_tes = Kriteria::limit(30)->get();
+        // $total_data = Kriteria::count()+count($data_tes);
+        // $sisa_data = $total_data-$request->data_training;
+        // $data_testing = Kriteria::limit($sisa_data)->get();
+        // $testing = $sisa_data;
         foreach ($data_testing as $key => $value) {
 
             $result = $naiv->Result($value->warna, $value->bau, $value->butir, $value->hama, $value->mutu);
