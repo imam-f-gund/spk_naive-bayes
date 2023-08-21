@@ -21,7 +21,7 @@ class PerformanceController extends Controller
         if($request->data_training>$total = Kriteria::count()){
 
             Alert::error('Info', 'Inputan melebihi data training');
-            return redirect()->route('performance');
+            return back();
 
         }
 
