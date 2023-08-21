@@ -15,7 +15,6 @@ class Analisa extends Model
         'fakta',
         'klasifikasi',
         'prediksi',
+        'kriteria_id',
     ];
 }
-				
-

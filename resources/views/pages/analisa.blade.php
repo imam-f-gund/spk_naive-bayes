@@ -16,7 +16,7 @@
             <div class="section-body">
 
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-4">
                         <div class="card">
                             <div class="card-header">
                                 <div class="col">
@@ -88,7 +88,7 @@
 
                                 <hr />
                                 <div class="row justify-content-center">
-                                    <div class="col-md-8 text-center">
+                                    <div class="col-12 text-center">
                                         <div class="card shadow rounded-lg">
                                             <div class="card-body text-center">
                                                 <h4 style="color: #6777ef !important;">Hasil Klasifikasi</h4>
@@ -129,7 +129,60 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="col">
+                                    <h2 class="section-title my-auto">History Analisa</h2>
+                                </div>
+                            </div>
+                            <div class="card-body table-responsive">
+                                <table class="table table-striped table-bordered table-md">
+                                    <thead class="text-center">
+                                        <tr class="text-center">
+                                            <th>No</th>
+                                            <th>Warna</th>
+                                            <th>Bau</th>
+                                            <th>Butir</th>
+                                            <th>Hama</th>
+                                            <th>Berkualitas</th>
+                                            <th>Buruk</th>
+                                            <th>Prediksi</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center" id="dataHistory">
+                                        @if ($dataHistory->isEmpty())
+                                            <tr>
+                                                <td colspan="8" class="text-center">
+                                                    Belum ada data, lakukan analisa terlebih dahulu
+                                                </td>
+                                            </tr>
+                                        @endif
+                                        @foreach ($dataHistory as $item)
+                                            <tr>
+                                                <td>{{ $loop->iteration }}</td>
+                                                <td>{{ $item->warna }}</td>
+                                                <td>{{ $item->bau }}</td>
+                                                <td>{{ $item->butir }}</td>
+                                                <td>{{ $item->hama }}</td>
+                                                <td>{{ round($item->nilai_berkualitas, 4) }}</td>
+                                                <td>{{ round($item->nilai_buruk, 4) }}</td>
+                                                <td>
+                                                    @if ($item->klasifikasi == 'berkualitas')
+                                                        <span class="badge badge-success">Berkualitas</span>
+                                                    @else
+                                                        <span class="badge badge-danger">Buruk</span>
+                                                    @endif
+                                                </td>
+                                            </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-2">
                         <div class="card">
                             <div class="card-header">
                                 <div class="col">
@@ -169,6 +222,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -232,13 +286,58 @@
                     $("#hasil-prediksi").show();
                     $("#prediksi-kosong").hide();
                     $("#hasil-prediksi").html(result.result);
-                    $("#nilai-berkualitas").html(result.berkualitas.toFixed(4));
-                    $("#nilai-buruk").html(result.buruk.toFixed(4));
+                    $("#nilai-berkualitas").html(result.nilai_berkualitas.toFixed(4));
+                    $("#nilai-buruk").html(result.nilai_buruk.toFixed(4));
 
                     if (result.result == "Berkualitas") {
                         $("#hasil-prediksi").css("color", "#00f2c3");
                     } else {
                         $("#hasil-prediksi").css("color", "#f5365c");
+                    }
+
+                    if (result.table_history.length > 0) {
+                        $("#dataHistory").html("");
+
+                        $.each(result.table_history, function(index, value) {
+                            console.log(value.nilai_berkualitas);
+                            let nilai_berkualitas, nilai_buruk, klasifikasi;
+                            if (Number(value.nilai_berkualitas) > 0) {
+                                nilai_berkualitas = Number(value.nilai_berkualitas).toFixed(4);
+                            } else {
+                                nilai_berkualitas = '0.0000';
+                            }
+
+                            if (Number(value.nilai_buruk) > 0) {
+                                nilai_buruk = Number(value.nilai_buruk).toFixed(4);
+                            } else {
+                                nilai_buruk = '0.0000';
+                            }
+
+                            if (value.klasifikasi == 'berkualitas') {
+                                klasifikasi = `<span class="badge badge-success">Berkualitas</span>`;
+                            } else {
+                                klasifikasi = `<span class="badge badge-danger">Buruk</span>`;
+                            }
+
+                            $("#dataHistory").append(
+                                "<tr>" +
+                                "<td>" + (index + 1) + "</td>" +
+                                "<td>" + value.warna + "</td>" +
+                                "<td>" + value.bau + "</td>" +
+                                "<td>" + value.butir + "</td>" +
+                                "<td>" + value.hama + "</td>" +
+                                "<td>" + nilai_berkualitas + "</td>" +
+                                "<td>" + nilai_buruk + "</td>" +
+                                "<td>" + klasifikasi + "</td>" +
+                                "</tr>"
+                            );
+                        });
+                    } else {
+                        $("#dataHistory").html(
+                            "<tr>" +
+                            "<td colspan='8' class='text-center'>Belum ada data, lakukan analisa terlebih dahulu </td>" +
+                            "</tr>"
+                        );
                     }
                 },
                 error: function(error) {

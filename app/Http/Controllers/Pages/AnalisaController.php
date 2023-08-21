@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Pages;
 
 use App\Http\Controllers\Controller;
+use App\Models\Analisa;
+use App\Models\HistoryAnalisa;
 use App\Models\Kriteria;
 use App\Service\NaiveBayes;
 use Barryvdh\DomPDF\Facade\Pdf;
@@ -16,14 +18,30 @@ class AnalisaController extends Controller
         $naiv = new NaiveBayes;
         $kriteria = Kriteria::limit(30)->get();
         $dataResult = [];
+        $dataHistory = HistoryAnalisa::orderBy('id', 'desc')->get();
 
         foreach ($kriteria as $key => $value) {
 
             $result = $naiv->Result($value->warna, $value->bau, $value->butir, $value->hama, $value->mutu);
             $dataResult[] = $result;
+
+            Analisa::updateOrCreate(
+                ['kriteria_id' => $value->id],
+                [
+                    'warna' => $value->warna,
+                    'bau' => $value->bau,
+                    'butir' => $value->butir,
+                    'hama' => $value->hama,
+                    'mutu' => $value->mutu,
+                    'berkualitas' => $result['berkualitas'],
+                    'buruk' => $result['buruk'],
+                    'klasifikasi' => $result['result'],
+                    'prediksi' => strtolower($result['prediksi']),
+                ]
+            );
         }
 
-        return view('pages.analisa', compact('dataResult', 'type_menu'));
+        return view('pages.analisa', compact('dataResult', 'type_menu', 'dataHistory'));
     }
 
     public function prediction(Request $request)
@@ -31,7 +49,24 @@ class AnalisaController extends Controller
         $naiv = new NaiveBayes;
         $result = $naiv->Result($request->warna, $request->bau, $request->butir, $request->hama, '');
 
-        return response()->json($result);
+        $history = new HistoryAnalisa;
+        $history->warna = $request->warna;
+        $history->bau = $request->bau;
+        $history->butir = $request->butir;
+        $history->hama = $request->hama;
+        $history->nilai_berkualitas = $result['berkualitas'];
+        $history->nilai_buruk = $result['buruk'];
+        $history->klasifikasi = $result['result'];
+        $history->save();
+
+        $data = [
+            'result' => $result['result'],
+            'nilai_berkualitas' => $result['berkualitas'],
+            'nilai_buruk' => $result['buruk'],
+            'table_history' => HistoryAnalisa::orderBy('id', 'desc')->get(),
+        ];
+
+        return response()->json($data);
     }
 
     public function export()
