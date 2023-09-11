@@ -35,6 +35,8 @@ Route::get('dashboard', function () {
 })->name('dashboard');
 
 Route::resource('kriteria', KriteriaController::class);
+Route::resource('tambah-performa', PerformanceController::class);
+Route::get('tambah-performa', [PerformanceController::class,'indexperforma'])->name('tambah-performa');
 Route::get('kriteria', [KriteriaController::class, 'index'])->name('kriteria');
 Route::get('analisa', [AnalisaController::class, 'index'])->name('analisa');
 Route::post('analisa', [AnalisaController::class, 'prediction'])->name('analisa.prediction');

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Performance')
+@section('title', 'Performa')
 
 @push('style')
     <!-- CSS Libraries -->
@@ -9,62 +9,29 @@
 @section('main')<div class="main-content">
         <section class="section">
             <div class="section-header">
-                <h1>Performance</h1>
+                <h1>Performa</h1>
             </div>
 
             <div class="section-body">
-                <h2 class="section-title">Data Performance</h2>
+                <h2 class="section-title">Data Performa</h2>
 
 
                 <div class="row">
 
                     <div class="col-sm-12 col-md-12">
-                        
 
                         <div class="card">
                             <div class="card-header">
 
-                                <div class="col ">
-                                    <form action="{{ url('performance') }}" method="GET">
-                                        <div class="form-group">
-                                            <label>Uji Akurasi</label>
-                                            <div class="input-group">
-                                                <select class="form-control" id="data_training" name="data_training">
-                                                    <option selected value="">Persentase</option>
-                                                    <option value="10">10%</option>
-                                                    <option value="20">20%</option>
-                                                    <option value="30">30%</option>
-                                                    <option value="40">40%</option>
-                                                    <option value="50">50%</option>
-                                                    <option value="60">60%</option>
-                                                    <option value="70">70%</option>
-                                                    <option value="80">80%</option>
-                                                    <option value="90">90%</option>
-
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                        <div>
-                                            <button type="submit" class="btn btn-primary float-right">Persentase</button>
-                                        </div>
-                                    </form>
-
-                                    {{-- <button type="button" class="btn btn-primary float-right" id="modal-performance">
-                                        Tambah performance
-                                    </button> --}}
-                                
                                 <div class="col">
-                               <a href="{{url('tambah-performa')}}" class="btn btn-secondary float-right">+ Tambah data Performa</a>
+                                    <button type="button" class="btn btn-primary float-right" id="modal-Performa">
+                                        Tambah Performa
+                                    </button>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <div class="text-center">
-                                        <tr>Data Training {{ $persentase }}% </tr>
-                                    </div>
                                     <table class="table">
-                                        <h5>DATA TRAINING</h5>
                                         <thead class="text-center">
                                             <tr>
                                                 <th>No</th>
@@ -73,13 +40,14 @@
                                                 <th>Butir</th>
                                                 <th>Hama</th>
                                                 <th>Mutu</th>
+                                                <th width="30%">Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @php
                                                 $no = 1;
                                             @endphp
-                                            @foreach ($data_training as $data)
+                                            @foreach ($Performa as $data)
                                                 <tr>
                                                     <td>{{ $no++ }}</td>
                                                     <td>{{ $data['warna'] }}</td>
@@ -87,80 +55,38 @@
                                                     <td>{{ $data['butir'] }}</td>
                                                     <td>{{ $data['hama'] }}</td>
                                                     <td>{{ $data['mutu'] }}</td>
+                                                    <td class="text-center">
+                                                        <button type="button" class="btn btn-warning btn-sm"
+                                                            id="modal-Performa-ubah" data-toggle="modal"
+                                                            data-target="#exampleModal"
+                                                            onclick="fungsiEdit('{{ 'modal-Performa-ubah' }}|{{ $data['id'] }}|{{ $data['warna'] }}|{{ $data['bau'] }}|{{ $data['butir'] }}|{{ $data['hama'] }}|{{ $data['mutu'] }}|')">
+                                                            Ubah
+                                                        </button>
 
+                                                        <form action="{{ url('tambah-performa/' . $data['id']) }}"
+                                                            class="d-inline" method="POST">
+                                                            @csrf
+                                                            @method('DELETE')
+
+                                                            <button type="submit" class="btn btn-sm btn-danger btn-delete">
+                                                                Hapus
+                                                            </button>
+                                                        </form>
+                                                    </td>
                                                 </tr>
                                             @endforeach
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <h5>DATA TESTING</h5>
-                                        <thead class="text-center">
-                                            <tr>
-                                                <th>No</th>
-                                                <th>Warna</th>
-                                                <th>Bau</th>
-                                                <th>Butir</th>
-                                                <th>Hama</th>
-                                                <th>Mutu</th>
-                                                <th>Fakta</th>
-                                                <th>Klasifikasi</th>
-                                                <th>Prediksi</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            @php
-                                                $no = 1;
-                                            @endphp
-                                            @foreach ($resultDataTesting as $item)
-                                                <tr>
-                                                    <td>{{ $no++ }}</td>
-                                                    <td>{{ $data['warna'] }}</td>
-                                                    <td>{{ $data['bau'] }}</td>
-                                                    <td>{{ $data['butir'] }}</td>
-                                                    <td>{{ $data['hama'] }}</td>
-                                                    <td>{{ $data['mutu'] }}</td>
-                                                    {{-- <td>{{ round($item['berkualitas'], 4) }}</td>
-                                                    <td>{{ round($item['buruk'], 4) }}</td> --}}
-                                                    <td>{{ $item['fakta'] }}</td>
-                                                    <td>{{ $item['result'] }}</td>
-                                                    <td>{{ $item['prediksi'] }}</td>
-
-                                                </tr>
-                                            @endforeach
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead class="text-center">
-                                            <tr>
-                                                <th>Akurasi</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="text-center">{{ round($akurasi, 2) }}%</td>
-                                            </tr>
-
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
                     </div>
+                   
         </section>
 
-        {{-- form modal performance --}}
-        {{--
-        <form class="modal-part" id="modal-performance-part" action="{{ url('performance') }}" method="POST">
+        {{-- form modal Performa --}}
+
+        <form class="modal-part" id="modal-Performa-part" action="{{ url('tambah-performa') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label>Warna</label>
@@ -169,7 +95,7 @@
                         <option selected value="">Pilih Warna</option>
                         <option value="Putih">Putih</option>
                         <option value="Kuning">Kuning</option>
-                        <option value="Campur">Campur</option>
+                        <option value="Hitam">Hitam</option>
                     </select>
                 </div>
             </div>
@@ -234,8 +160,9 @@
                         </button>
                     </div>
 
-                    <form action="{{ url('performance-uji') }}" method="GET">
+                    <form action="{{ url('tambah-performa') }}" method="POST">
                         @csrf
+                        @method('PUT')
                         <div class="modal-body">
                             <div class="form-group">
                                 <label>Warna</label>
@@ -244,7 +171,7 @@
                                         <option selected value="">Pilih Warna</option>
                                         <option value="Putih">Putih</option>
                                         <option value="Kuning">Kuning</option>
-                                        <option value="Campur">Campur</option>
+                                        <option value="Hitam">Hitam</option>
                                     </select>
 
                                 </div>
@@ -303,7 +230,7 @@
                     </form>
                 </div>
             </div>
-        </div> --}}
+        </div>
     </div>
 @endsection
 
@@ -315,9 +242,9 @@
     <!-- Page Specific JS File -->
     <script src="{{ asset('js/page/bootstrap-modal.js') }}"></script>
     <script>
-        $("#modal-performance").fireModal({
-            title: 'Tambah performance',
-            body: $("#modal-performance-part"),
+        $("#modal-Performa").fireModal({
+            title: 'Tambah Performa',
+            body: $("#modal-Performa-part"),
             footerClass: 'bg-whitesmoke',
             autoFocus: false,
             shown: function(modal, form) {
@@ -328,7 +255,7 @@
 
         function fungsiEdit(data) {
             var data = data.split('|');
-            $('#exampleModal form').attr('action', "{{ url('performance') }}/" + data[1]);
+            $('#exampleModal form').attr('action', "{{ url('tambah-performa') }}/" + data[1]);
             $('#warna-update').val(data[2]);
             $('#bau-update').val(data[3]);
             $('#butir-update').val(data[4]);

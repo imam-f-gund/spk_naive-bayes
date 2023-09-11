@@ -16,7 +16,7 @@ class AnalisaController extends Controller
     {
         $type_menu = 'analisa';
         $naiv = new NaiveBayes;
-        $kriteria = Kriteria::limit(30)->get();
+        $kriteria = Kriteria::all();
         $dataResult = [];
         $dataHistory = HistoryAnalisa::orderBy('id', 'desc')->get();
 
@@ -72,7 +72,7 @@ class AnalisaController extends Controller
     public function export()
     {
         $naiv = new NaiveBayes;
-        $kriteria = Kriteria::limit(30)->get();
+        $kriteria = Kriteria::all();
         $dataResult = [];
 
         foreach ($kriteria as $key => $value) {

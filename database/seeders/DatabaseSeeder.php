@@ -38,6 +38,986 @@ class DatabaseSeeder extends Seeder
                 "Warna"=> "Kuning",
                 "Bau"=> "Normal",
                 "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
                 "Hama"=> "Bebas",
                 "Mutu"=> "Berkualitas"
             ],
@@ -70,7 +1050,7 @@ class DatabaseSeeder extends Seeder
                 "Mutu"=> "Buruk"
             ],
             [
-                "Warna"=> "Campur",
+                "Warna"=> "Hitam",
                 "Bau"=> "Busuk",
                 "Butir"=> "Rusak",
                 "Hama"=> "Terkena",
@@ -84,7 +1064,291 @@ class DatabaseSeeder extends Seeder
                 "Mutu"=> "Berkualitas"
             ],
             [
-                "Warna"=> "Campur",
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ]
+        ];
+
+        $performa = 
+        [
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Baik",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
                 "Bau"=> "Normal",
                 "Butir"=> "Pecah",
                 "Hama"=> "Bebas",
@@ -154,14 +1418,154 @@ class DatabaseSeeder extends Seeder
                 "Mutu"=> "Berkualitas"
             ],
             [
-                "Warna"=> "Campur",
+                "Warna"=> "Hitam",
                 "Bau"=> "Normal",
                 "Butir"=> "Baik",
                 "Hama"=> "Bebas",
                 "Mutu"=> "Berkualitas"
             ],
             [
-                "Warna"=> "Campur",
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Pecah",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Pecah",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Rusak",
+                "Hama"=> "Terkena",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Putih",
+                "Bau"=> "Busuk",
+                "Butir"=> "Rusak",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Buruk"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Kuning",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
+                "Bau"=> "Normal",
+                "Butir"=> "Baik",
+                "Hama"=> "Bebas",
+                "Mutu"=> "Berkualitas"
+            ],
+            [
+                "Warna"=> "Hitam",
                 "Bau"=> "Busuk",
                 "Butir"=> "Pecah",
                 "Hama"=> "Terkena",
@@ -210,7 +1614,7 @@ class DatabaseSeeder extends Seeder
                 "Mutu"=> "Berkualitas"
             ],
             [
-                "Warna"=> "Campur",
+                "Warna"=> "Hitam",
                 "Bau"=> "Normal",
                 "Butir"=> "Baik",
                 "Hama"=> "Bebas",
@@ -245,7 +1649,7 @@ class DatabaseSeeder extends Seeder
                 "Mutu"=> "Berkualitas"
             ],
             [
-                "Warna"=> "Campur",
+                "Warna"=> "Hitam",
                 "Bau"=> "Busuk",
                 "Butir"=> "Baik",
                 "Hama"=> "Terkena",
@@ -266,7 +1670,7 @@ class DatabaseSeeder extends Seeder
                 "Mutu"=> "Berkualitas"
             ],
             [
-                "Warna"=> "Campur",
+                "Warna"=> "Hitam",
                 "Bau"=> "Busuk",
                 "Butir"=> "Rusak",
                 "Hama"=> "Bebas",
@@ -315,7 +1719,7 @@ class DatabaseSeeder extends Seeder
                 "Mutu"=> "Berkualitas"
             ],
             [
-                "Warna"=> "Campur",
+                "Warna"=> "Hitam",
                 "Bau"=> "Busuk",
                 "Butir"=> "Rusak",
                 "Hama"=> "Terkena",
@@ -350,7 +1754,7 @@ class DatabaseSeeder extends Seeder
                 "Mutu"=> "Berkualitas"
             ],
             [
-                "Warna"=> "Campur",
+                "Warna"=> "Hitam",
                 "Bau"=> "Normal",
                 "Butir"=> "Pecah",
                 "Hama"=> "Bebas",
@@ -383,81 +1787,12 @@ class DatabaseSeeder extends Seeder
                 "Butir"=> "Baik",
                 "Hama"=> "Bebas",
                 "Mutu"=> "Berkualitas"
-            ],
-            [
-                "Warna"=> "Kuning",
-                "Bau"=> "Normal",
-                "Butir"=> "Baik",
-                "Hama"=> "Bebas",
-                "Mutu"=> "Berkualitas"
-            ],
-            [
-                "Warna"=> "Kuning",
-                "Bau"=> "Normal",
-                "Butir"=> "Baik",
-                "Hama"=> "Terkena",
-                "Mutu"=> "Buruk"
-            ],
-            [
-                "Warna"=> "Campur",
-                "Bau"=> "Normal",
-                "Butir"=> "Pecah",
-                "Hama"=> "Bebas",
-                "Mutu"=> "Berkualitas"
-            ],
-            [
-                "Warna"=> "Kuning",
-                "Bau"=> "Busuk",
-                "Butir"=> "Rusak",
-                "Hama"=> "Terkena",
-                "Mutu"=> "Buruk"
-            ],
-            [
-                "Warna"=> "Kuning",
-                "Bau"=> "Normal",
-                "Butir"=> "Baik",
-                "Hama"=> "Bebas",
-                "Mutu"=> "Berkualitas"
-            ],
-            [
-                "Warna"=> "Kuning",
-                "Bau"=> "Normal",
-                "Butir"=> "Baik",
-                "Hama"=> "Bebas",
-                "Mutu"=> "Berkualitas"
-            ],
-            [
-                "Warna"=> "Kuning",
-                "Bau"=> "Normal",
-                "Butir"=> "Baik",
-                "Hama"=> "Bebas",
-                "Mutu"=> "Berkualitas"
-            ],
-            [
-                "Warna"=> "Kuning",
-                "Bau"=> "Normal",
-                "Butir"=> "Baik",
-                "Hama"=> "Bebas",
-                "Mutu"=> "Berkualitas"
-            ],
-            [
-                "Warna"=> "Kuning",
-                "Bau"=> "Normal",
-                "Butir"=> "Pecah",
-                "Hama"=> "Terkena",
-                "Mutu"=> "Buruk"
-            ],
-            [
-                "Warna"=> "Campur",
-                "Bau"=> "Busuk",
-                "Butir"=> "Rusak",
-                "Hama"=> "Terkena",
-                "Mutu"=> "Buruk"
             ]
         ];
 
         DB::table('users')->insert($user);  
         DB::table('kriterias')->insert($kriteria);  
+        DB::table('performas')->insert($performa);  
     
     }
 }

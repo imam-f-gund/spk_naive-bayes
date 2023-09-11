@@ -34,7 +34,7 @@
                                                     <option selected value="">Pilih Warna</option>
                                                     <option value="Putih">Putih</option>
                                                     <option value="Kuning">Kuning</option>
-                                                    <option value="Campur">Campur</option>
+                                                    <option value="Hitam">Hitam</option>
                                                 </select>
                                                 <div class="invalid-feedback" id="errorWarna" style="display: none">
                                                     Warna harus diisi

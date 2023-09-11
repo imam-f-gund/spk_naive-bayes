@@ -45,7 +45,7 @@ class NaiveBayes
                     'status' => 'putih_berkualitas',
                 ];
             }
-            if ($value->warna == 'Campur' && $value->mutu == 'berkualitas') {
+            if ($value->warna == 'Hitam' && $value->mutu == 'berkualitas') {
                 $datawarna[] = [
                     'name' => 'warna',
                     'id' => $value->id,
@@ -67,7 +67,7 @@ class NaiveBayes
                     'status' => 'putih_buruk',
                 ];
             }
-            if ($value->warna == 'Campur' && $value->mutu == 'buruk') {
+            if ($value->warna == 'Hitam' && $value->mutu == 'buruk') {
                 $datawarna[] = [
                     'name' => 'warna',
                     'id' => $value->id,
@@ -191,7 +191,7 @@ class NaiveBayes
         //kualitas
         $totalberkualitas = $this->CountData($data, 'berkualitas');
         $totalburuk = $this->CountData($data, 'buruk');
-
+       
         //warna
         $totalwarna_kuning_berkualitas = $this->CountData($datawarna, 'kuning_berkualitas');
         $totalwarna_putih_berkualitas = $this->CountData($datawarna, 'putih_berkualitas');
@@ -201,8 +201,8 @@ class NaiveBayes
         $totalwarna_campuran_buruk = $this->CountData($datawarna, 'campuran_buruk');
         $warna1 = $this->Warna('kuning', (int) $totalwarna_kuning_berkualitas / (int) $totalberkualitas, (int) $totalwarna_kuning_buruk / (int) $totalburuk);
         $warna2 = $this->Warna('putih', (int) $totalwarna_putih_berkualitas / (int) $totalberkualitas, (int) $totalwarna_putih_buruk / (int) $totalburuk);
-        $warna3 = $this->Warna('campuran', (int) $totalwarna_campuran_berkualitas / (int) $totalberkualitas, (int) $totalwarna_campuran_buruk / (int) $totalburuk);
-
+        $warna3 = $this->Warna('hitam', (int) $totalwarna_campuran_berkualitas / (int) $totalberkualitas, (int) $totalwarna_campuran_buruk / (int) $totalburuk);
+      
         //bau
         $totalbau_normal_berkualitas = $this->CountData($databau, 'normal_berkualitas');
         $totalbau_busuk_berkualitas = $this->CountData($databau, 'busuk_berkualitas');
@@ -232,6 +232,9 @@ class NaiveBayes
         $hama1 = $this->Hama('bebas', (int) $totalhama_bebas_berkualitas / (int) $totalberkualitas, (int) $totalhama_bebas_buruk / (int) $totalburuk);
         $hama2 = $this->Hama('terkena', (int) $totalhama_terkena_berkualitas / (int) $totalberkualitas, (int) $totalhama_terkena_buruk / (int) $totalburuk);
 
+        $probabilitas_berkualitas = $totalberkualitas/count($data);
+        $probabilitas_buruk = $totalburuk/count($data);
+
         $result['warna'] = [
             $warna1,
             $warna2,
@@ -249,6 +252,10 @@ class NaiveBayes
         $result['hama'] = [
             $hama1,
             $hama2,
+        ];
+        $result['probabilitas'] = [
+            'berkualitas'=>number_format($probabilitas_berkualitas, 4, '.', '.'),
+            'buruk'=>number_format($probabilitas_buruk, 4, '.', '.')
         ];
 
         return $result;
@@ -269,7 +276,7 @@ class NaiveBayes
             }
 
         }
-
+    
         return count($data);
     }
 
@@ -328,11 +335,10 @@ class NaiveBayes
     public function Result($warna, $bau, $butir, $hama, $fakta)
     {
         $probabilitas = $this->Probabilitas();
-
         // warna
         $warna = strtolower($warna);
-        if ($warna == 'campur') {
-            $warna = 'campuran';
+        if ($warna == 'Hitam') {
+            $warna = 'hitam';
         }
         $warnaResult = array_filter($probabilitas['warna'], function ($var) use ($warna) {
             return ($var['warna'] == $warna);
@@ -411,12 +417,12 @@ class NaiveBayes
             'butir' => ucfirst($butir),
             'hama' => ucfirst($hama),
             'fakta' => ucfirst($fakta),
-            'berkualitas' => $berkualitas,
-            'buruk' => $buruk,
+            'berkualitas' => $berkualitas*$probabilitas['probabilitas']['berkualitas'],
+            'buruk' => $buruk*$probabilitas['probabilitas']['buruk'],
             'result' => ucfirst($result),
             'prediksi' => $result == $fakta ? 'Sesuai' : 'Tidak Sesuai',
         ];
-
+      
         return $data;
     }
 }

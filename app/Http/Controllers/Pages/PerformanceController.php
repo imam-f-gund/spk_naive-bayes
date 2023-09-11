@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Pages;
 
 use App\Http\Controllers\Controller;
-use App\Models\Kriteria;
+use App\Models\Performa;
 use App\Service\NaiveBayes;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class PerformanceController extends Controller
 {
@@ -17,7 +19,7 @@ class PerformanceController extends Controller
     public function index(Request $request)
     {
 
-        // if($request->data_training>$total = Kriteria::count()){
+        // if($request->data_training>$total = Performa::count()){
 
         //     Alert::error('Info', 'Inputan melebihi data training');
         //     return back();
@@ -37,22 +39,22 @@ class PerformanceController extends Controller
         if (!empty($request->data_training)) {
             $persentase = $request->data_training;
         }
+        
+        $total_data = Performa::count() / 100 * $persentase;
+        $data_training = Performa::limit((int) $total_data)->get();
 
-        $total_data = Kriteria::count() / 100 * $persentase;
-        $data_training = Kriteria::limit((int) $total_data)->get();
-
-        $total = Kriteria::count();
+        $total = Performa::count();
         $sisa_data = $total - (int) $total_data;
-        $data_testing = Kriteria::limit($sisa_data)->get();
+        $data_testing = Performa::limit($sisa_data)->get();
         $testing = $sisa_data;
         // // }
         // $persentase = $request->data_training;
 
-        // $data_training = Kriteria::limit($request->data_training)->get();
-        // $data_tes = Kriteria::limit(30)->get();
-        // $total_data = Kriteria::count()+count($data_tes);
+        // $data_training = Performa::limit($request->data_training)->get();
+        // $data_tes = Performa::limit(30)->get();
+        // $total_data = Performa::count()+count($data_tes);
         // $sisa_data = $total_data-$request->data_training;
-        // $data_testing = Kriteria::limit($sisa_data)->get();
+        // $data_testing = Performa::limit($sisa_data)->get();
         // $testing = $sisa_data;
         foreach ($data_testing as $key => $value) {
 
@@ -93,7 +95,25 @@ class PerformanceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(), [ 
+            'warna'=>'required',
+            'bau'=>'required',
+            'butir'=>'required',
+            'hama'=>'required',
+            'mutu'=>'required',
+        ]);
+
+        if ($validator->fails()) {
+          
+            Alert::error('Gagal', 'Data Gagal Ditambahkan'.$validator->errors());
+            return back();
+        }
+
+        Performa::create($request->all());
+
+        Alert::success('Berhasil', 'Data Berhasil Ditambahkan');
+        return redirect()->route('tambah-performa');
+        
     }
 
     /**
@@ -127,7 +147,24 @@ class PerformanceController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validator = Validator::make($request->all(), [ 
+            'warna'=>'required',
+            'bau'=>'required',
+            'butir'=>'required',
+            'hama'=>'required',
+            'mutu'=>'required',
+        ]);
+
+        if ($validator->fails()) {
+          
+            Alert::error('Gagal', 'Data Gagal Diubah'.$validator->errors());
+            return back();
+        }
+        $Performa=Performa::find($id);
+        $Performa->update($request->all());
+
+        Alert::success('Berhasil', 'Data Berhasil Diubah');
+        return redirect()->route('tambah-performa');
     }
 
     /**
@@ -138,14 +175,16 @@ class PerformanceController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Performa::find($id);
+
+        Alert::success('Berhasil', 'Data Berhasil Didapus');
+        return redirect()->route('tambah-performa');
     }
 
-    public function uji_data(Request $request)
+    public function indexperforma()
     {
-
-        // $data_training = $request->data_training;
-        // $data_testing = $kriteria;
+        $Performa = Performa::all();
+        return view('pages.dataperforma', ['type_menu' => 'tambah-performa'], compact('Performa'));
 
     }
 }

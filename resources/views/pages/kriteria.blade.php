@@ -222,7 +222,7 @@
                         <option selected value="">Pilih Warna</option>
                         <option value="Putih">Putih</option>
                         <option value="Kuning">Kuning</option>
-                        <option value="Campur">Campur</option>
+                        <option value="Hitam">Hitam</option>
                     </select>
                 </div>
             </div>
@@ -298,7 +298,7 @@
                                         <option selected value="">Pilih Warna</option>
                                         <option value="Putih">Putih</option>
                                         <option value="Kuning">Kuning</option>
-                                        <option value="Campur">Campur</option>
+                                        <option value="Hitam">Hitam</option>
                                     </select>
 
                                 </div>
