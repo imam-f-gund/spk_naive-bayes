@@ -175,7 +175,7 @@ class PerformanceController extends Controller
      */
     public function destroy($id)
     {
-        Performa::find($id);
+        Performa::find($id)->delete();
 
         Alert::success('Berhasil', 'Data Berhasil Didapus');
         return redirect()->route('tambah-performa');

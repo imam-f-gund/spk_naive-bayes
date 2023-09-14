@@ -110,7 +110,7 @@ class KriteriaController extends Controller
     public function destroy($id)
     {
         //
-        Kriteria::find($id);
+        Kriteria::find($id)->delete();
 
         Alert::success('Berhasil', 'Data Berhasil Didapus');
         return redirect()->route('kriteria');
